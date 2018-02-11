@@ -1,0 +1,163 @@
+@import "_reset.scss";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font: 300 1rem Helvetica Neue;
+}
+body {
+  background: rgba(0,0,0,.05);
+}
+header, section {
+  width: 100%;
+  max-width: 768px;
+  padding: 5% 5% 2.5%;
+  margin: 0 auto;
+}
+
+.stars, .thumbs {
+  a {
+    background: none;
+    font-size: 1.24rem;
+    color: #777575;
+  }
+}
+input {
+  width: 100%;
+  height: 37px;
+  margin: 3% auto;
+  font-size: 1rem;
+  &[type="text"]{
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+    background: rgba(255,255,255,1);
+    border-top: 1px solid #c4c7c9;
+    border-bottom: 1px solid #c4c7c9;
+    margin: -1px 0 0;
+    height: 48px;
+    font-size: 1rem;
+    color: #a7a9af;
+  }
+}
+section.sign-in {
+  padding: 5% 0;
+}
+section.results {
+  border-bottom: 1px solid #c4c7c9;
+  ul {
+    li a {
+      background: none;
+      height: 100px;
+      padding: 12px 0;
+      border-radius: 0;
+      width: 100%;
+      border-top: 1px solid #c4c7c9;
+      color: #343739;
+      display: block;
+      span.brand-logo {
+        float: left;
+        width: 60px;
+        height: 60px;
+        background: #c4c7c9;
+        margin: 3px 12px 0 0;
+      }
+      span.cigar-name {
+        font-size: 1.48rem;
+        display: block;
+        margin: 0 0 3px;
+        width: 70%;
+        float: left;
+        font-weight: 800;
+      }
+      span.brand-name {
+        font-size: 1rem;
+        display: block;
+        margin: 3px 0;
+        width: 70%;
+        float: left;
+        font-weight: 500;
+        color: #777575;
+      }
+      span.type {
+        font-size: .8rem;
+        color: #777575;
+        margin: 3px 0;
+        width: 70%;
+        float: left;
+      }
+    }
+  }
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px){
+    font-size: 4rem;
+  }
+}
+h2 {
+  font-size: 2.24rem;
+  margin: 0 0 20px;
+}
+h3 {
+  font-size: 1.48rem;
+}
+p {
+  font-size: 1.11rem;
+  line-height: 1.25;
+  margin-bottom: 8%;
+}
+a {
+  background: #a7a9af;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  &:hover {
+    background: #b7b9bf;
+  }
+  &:active {
+    background: #77797f;
+  }
+  &.btn-prim {
+    display: block;
+    width: 80%;
+    max-width: 448px;
+    height: 48px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 14px;
+    text-align: center;
+  }
+}
+
+nav {
+  text-align: center;
+  a {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      width: 56px;
+      height: 56px;
+      padding-top: 8px;
+      font-size: 2rem;
+      font-weight: 800;
+      text-decoration: none;
+      :hover {
+        background: #b7b9bf;
+      }
+      :active {
+        background: #77797f;
+      }
+      @media screen and (min-width:460px) {
+        bottom: 24px;
+        right: 24px;
+      }
+  }
+}
