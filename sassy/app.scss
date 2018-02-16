@@ -15,26 +15,16 @@ header, section {
   padding: 5% 5% 2.5%;
   margin: 0 auto;
 }
-
-.stars, .thumbs {
-  a {
-    background: none;
-    font-size: 1.24rem;
-    color: #777575;
-    &:hover {
-      background: gold;
-    }
-  }
-}
 input {
   width: 100%;
   height: 37px;
   margin: 3% auto;
   font-size: 1rem;
-  &[type="text"]{
-    border: none;
+  -webkit-appearance: none;
+  transition: .3s all ease;
+  &[type="text"], &[type="search"] {
+    border: 1px solid #b7b9bf;
     border-radius: 0;
-    -webkit-appearance: none;
     box-shadow: none;
     background: rgba(255,255,255,1);
     border-top: 1px solid #c4c7c9;
@@ -43,6 +33,10 @@ input {
     height: 48px;
     font-size: 1rem;
     color: #a7a9af;
+    padding: 0 7px;
+  }
+  &:hover {
+    border-color: #e4e7e9;
   }
 }
 section.sign-in {
@@ -139,6 +133,18 @@ a {
     text-align: center;
   }
 }
+
+.stars, .thumbs {
+  a {
+    background: transparent;
+    font-size: 1.24rem;
+    color: #777575;
+    &:hover {
+      color: gold;
+    }
+  }
+}
+
 
 nav {
   text-align: center;
