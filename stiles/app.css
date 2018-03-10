@@ -47,16 +47,20 @@ table {
   border-spacing: 0;
 }
 
+strong {
+  font-weight: 800;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font: 300 1rem Helvetica Neue;
+  font: 300 1rem Arial;
 }
 
 body {
-  background: rgba(0, 0, 0, 0.05);
+  background: white;
 }
 
 header, section {
@@ -160,12 +164,16 @@ h1 {
 }
 
 h2 {
-  font-size: 2.24rem;
+  font-size: 2rem;
   margin: 0 0 20px;
 }
 
 h3 {
   font-size: 1.48rem;
+}
+
+h4 {
+  font-size: 1.11rem;
 }
 
 p {
@@ -179,6 +187,7 @@ a {
   color: #fff;
   text-decoration: none;
   border-radius: 30px;
+  text-transform: uppercase;
 }
 
 a:hover {
@@ -195,12 +204,21 @@ a.btn-prim {
   max-width: 448px;
   height: 48px;
   margin: 20px auto;
-  text-transform: uppercase;
   font-size: 1.25rem;
   font-weight: 500;
   text-decoration: none;
   padding-top: 14px;
   text-align: center;
+}
+
+a.disabled {
+  opacity: .48;
+  color: rgba(255, 255, 255, 0.67);
+  border: 1px solid #c4c7c9;
+}
+
+a.disabled:hover {
+  background-color: #a7a9af;
 }
 
 .stars a, .thumbs a {
@@ -211,6 +229,77 @@ a.btn-prim {
 
 .stars a:hover, .thumbs a:hover {
   color: gold;
+}
+
+.tag .cancel {
+  font-weight: 800;
+  padding: 8px 10px 7px;
+  position: fixed;
+  top: 12px;
+  right: 12px;
+}
+
+.tag h2#cigar-name {
+  margin: -3px 0 0;
+  font-weight: 800;
+}
+
+.tag h3 {
+  margin-bottom: 3px;
+  font-size: 1.37rem;
+}
+
+.tag h4 {
+  margin-bottom: 3px;
+  color: #67696f;
+}
+
+.tag .cigar-pic {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  background: #d4d7d9;
+  display: block;
+  margin: 0 0 7%;
+}
+
+.tag .brand-logo {
+  float: left;
+  width: 67px;
+  height: 67px;
+  background: #d4d7d9;
+  margin-right: 2.5%;
+}
+
+.tag .details {
+  margin: 7% 0;
+}
+
+.tag .details li {
+  margin: 1% 0;
+  color: #27292f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tag .rating {
+  float: left;
+  text-align: center;
+  width: 100%;
+  margin: 7% 0 14%;
+}
+
+.tag .rating a {
+  width: 44%;
+  margin: 2.5%;
+  padding: 12px;
+  display: inline-block;
+}
+
+.tag .save {
+  clear: both;
+  display: block;
 }
 
 nav {
